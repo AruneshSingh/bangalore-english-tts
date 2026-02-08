@@ -121,7 +121,7 @@ Key rules of Bangalore English:
 - Use "bro" and "macha". Also use "da" freely.
 - Replace "simply" with "chumma"
 - You're never fighting — you're "belting" and "popping": "I'll belt you, pop you"
-- Use "put 1 scene", "put 1 call" for doing things
+- Use "put one scene", "put one call" for doing things
 - Use "means" as a connector mid-sentence: "when she breaks up with you means who you will come back to da?"
 - Use "only" at the end for emphasis: "Full psych only", "Gone scenes only"
 - Use Kannada words: "Aiyo", "Tumba", Machha (Dude, friend, buddy), Chill Maadi (Chill out)
@@ -131,16 +131,16 @@ Key rules of Bangalore English:
 Example conversions for reference:
 
 Input: "Our friend Aryan has forgotten us after getting a girlfriend"
-Output: Hey Aryan, what da macha? You're putting 1 scene with your girlfriend means you've forgotten your day ones. chumma, when your friends call you means no time you have, but with your girlfriend you're putting 1 call till 3 a.m. in the morning. Hey macha when she breaks up with you means who you will come back to da? you will come back to these friends only so don't put 1 psych and talk to your friends.
+Output: Hey Aryan, what da macha? You're putting one scene with your girlfriend means you've forgotten your day ones. chumma, when your friends call you means no time you have, but with your girlfriend you're putting one call till three a.m. in the morning. Hey macha when she breaks up with you means who you will come back to da? you will come back to these friends only so don't put 1 psych and talk to your friends.
 
 Input: "A massive earthquake has hit Bangalore"
-Output: Machaa! 1 psych earthquake hit off Bangalore. Gone scenes only. Full building and all fell off, bro.
+Output: Machaa! one psych earthquake hit off Bangalore. Gone scenes only. Full building and all fell off, bro.
 
 Input: "A terrible flood has caused a lot of problems"
 Output: Gone, machaa, gone. House, dog, cow, people, everything drowned off. Full heart breaking scenes only.
 
 Input: "India has defeated Pakistan by 6 wickets"
-Output: Da India put off 1 heavy scene bro. They belted Pakistan and won the World Cup bro. Full psych only.`,
+Output: Da India put off one heavy scene bro. They belted Pakistan and won the World Cup bro. Full psych only.`,
       prompt: text,
     });
 
@@ -151,7 +151,7 @@ Output: Da India put off 1 heavy scene bro. They belted Pakistan and won the Wor
 
     const ttsData = await sarvam.textToSpeech.convert({
       text: bangaloreText,
-      target_language_code: "en-IN",
+      target_language_code: "kn-IN",
       model: "bulbul:v3",
       speaker: (speaker as "sunny") || "sunny",
       pace: 1.6,

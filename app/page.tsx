@@ -25,6 +25,8 @@ import {
 } from "@remixicon/react";
 import { WaveformPlayer } from "@/components/waveform-player";
 
+import posthog from 'posthog-js'
+
 const SPEAKERS = [
   "sunny",
   "shubh",
@@ -80,6 +82,10 @@ export default function Page() {
       }
 
       setResult(data);
+      posthog.capture("tts_generated", {
+        prompt: text,
+        voice: speaker,
+      });
     } catch {
       setError({ message: "Network error — check your connection and try again." });
     } finally {
